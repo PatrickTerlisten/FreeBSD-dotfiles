@@ -1,0 +1,11 @@
+neww zsh
+neww zsh
+neww -n 'messages' 'sudo tail -F /var/log/messages'
+neww -n 'maillog' 'sudo tail -F /var/log/maillog'
+neww -n 'fail2ban' 'sudo tail -F /var/log/fail2ban.log'
+neww -n 'auth' 'sudo tail -F /var/log/auth.log'
+neww -n 'access log' 'sudo tail -F /var/log/nginx/access.log'
+neww -n 'error log' 'sudo tail -F /var/log/nginx/error.log'
+neww -n 'htop' 'sudo htop'
+neww -n 'monitor' 'sudo /root/bin/monitor.sh'
+selectw -t 1
